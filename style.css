@@ -155,3 +155,53 @@ main {
    border-radius: 50%;
    border: 3px solid #eece1a;
  }
+ .bio{
+   grid-area: bio;
+   font-size: 22px;
+ }
+ .job {
+   margin-top: 50px;
+   background: #515151;
+   padding :0.5em;
+   border-bottom: 3px solid #eece1a;
+   min-height: 300px;
+
+ }
+
+ .job-1{
+   grid-area: job1;
+ }
+
+ .job-2{
+  grid-area: job2;
+}
+
+.job-3{
+  grid-area: job3;
+}
+/* Contact Page */
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.boxes div{
+  font-size: 2rem;
+  border: 3px solid #fff;
+  margin: 3rem;
+  padding: 1.5rem 2.5rem;
+  transition: all 0.5s ease-out;
+}
+
+.boxes div:hover{
+  padding: 0.5rem 1.5rem;
+  background: #eece1a;
+  color:#000;
+}
+.boxes div:hover span{
+  color: #000;
+}
+/* WORK */
