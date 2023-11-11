@@ -18,3 +18,25 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Calculate years of experience
+function calculateExperience(startDate) {
+    const today = new Date();
+    const start = new Date(startDate);
+    const years = today.getFullYear() - start.getFullYear();
+    const months = today.getMonth() - start.getMonth();
+    const days = today.getDate() - start.getDate();
+
+    let experience = years;
+    if (months < 0 || (months === 0 && days < 0)) {
+        experience--;
+    }
+
+    return experience;
+}
+
+// Usage
+const startDate = '2020-04-01'; // Replace with your start date in YYYY-MM-DD format
+const experienceYears = calculateExperience(new Date(startDate));
+const experienceElement = document.getElementById('experienceYears');
+experienceElement.textContent = experienceYears + ' years';
