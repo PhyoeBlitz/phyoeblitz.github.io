@@ -39,4 +39,6 @@ function calculateExperience(startDate) {
 const startDate = '2020-04-01'; // Replace with your start date in YYYY-MM-DD format
 const experienceYears = calculateExperience(new Date(startDate));
 const experienceElement = document.getElementById('experienceYears');
-experienceElement.textContent = experienceYears + ' years';
+if(experienceElement){
+  experienceElement.textContent = experienceYears + ' years';
+}
