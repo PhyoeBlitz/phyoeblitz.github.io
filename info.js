@@ -1,0 +1,1 @@
+window.startDate = '2020-04-01';
