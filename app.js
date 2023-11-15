@@ -54,10 +54,10 @@ var h6_2 = document.createElement("h6");
 var p_2 = document.createElement("p");
 
 // Create text nodes
-var h6_1_content = document.createTextNode("English Speaking & Writing");
-var p_1_content = document.createTextNode("I've been studying English since elementary school.");
-var h6_2_content = document.createTextNode("Japanese Speaking & Writing");
-var p_2_content = document.createTextNode("I passed the Japanese Language Proficiency Test N3 in March of 2017");
+var h6_1_content = document.createTextNode(window.skill_1_Header);
+var p_1_content = document.createTextNode(window.p_1_content);
+var h6_2_content = document.createTextNode(window.skill_2_Header);
+var p_2_content = document.createTextNode(window.p_2_content);
 
 // Add the text nodes to the newly created elements
 h6_1.appendChild(h6_1_content);
