@@ -2,7 +2,7 @@ window.startDate = '2020-04-01';
 
 //Skills
 window.skill_1_Header = "English Speaking & Writing";
-window.p_1_content = "I've been studying English since elementary school.";
+window.p_1_content = "From a young age, I've been immersed in the English language, beginning my journey in elementary school. Over the years, I've honed my skills and now confidently utilize English in my day-to-day life. Whether it's for work or leisure, my proficiency in English allows me to communicate effectively and navigate through various situations with ease.";
 window.skill_2_Header = "Japanese Speaking & Writing";
 window.p_2_content = "I passed the Japanese Language Proficiency Test N3 in March of 2017";
 
