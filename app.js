@@ -70,3 +70,27 @@ div.appendChild(h6_1);
 div.appendChild(p_1);
 div.appendChild(h6_2);
 div.appendChild(p_2);
+
+//Jobs Experience
+// Get the jobs element
+var jobs = document.getElementById("Jobs");
+
+// Loop through the array and create a new p element for each item
+for (var i = 0; i < window.jobsArray.length; i++) {
+  var p = document.createElement("p");
+  var content = document.createTextNode(window.jobsArray[i]);
+  p.appendChild(content);
+  jobs.appendChild(p);
+}
+
+//Education
+// Get the Edu element
+var Edu = document.getElementById("Edu");
+
+// Loop through the array and create a new p element for each item
+for (var i = 0; i < window.EduArray.length; i++) {
+  var p = document.createElement("p");
+  var content = document.createTextNode(window.EduArray[i]);
+  p.appendChild(content);
+  Edu.appendChild(p);
+}
