@@ -48,9 +48,9 @@ if(experienceElement){
 var div = document.getElementById("Skills");
 
 // Create new elements
-var h6_1 = document.createElement("h6");
+var h6_1 = document.createElement("h3");
 var p_1 = document.createElement("p");
-var h6_2 = document.createElement("h6");
+var h6_2 = document.createElement("h3");
 var p_2 = document.createElement("p");
 
 // Create text nodes
