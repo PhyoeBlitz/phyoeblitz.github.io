@@ -42,3 +42,31 @@ const experienceElement = document.getElementById('experienceYears');
 if(experienceElement){
   experienceElement.textContent = experienceYears + ' years';
 }
+
+//Skills
+// Get the div element
+var div = document.getElementById("Skills");
+
+// Create new elements
+var h6_1 = document.createElement("h6");
+var p_1 = document.createElement("p");
+var h6_2 = document.createElement("h6");
+var p_2 = document.createElement("p");
+
+// Create text nodes
+var h6_1_content = document.createTextNode("English Speaking & Writing");
+var p_1_content = document.createTextNode("I've been studying English since elementary school.");
+var h6_2_content = document.createTextNode("Japanese Speaking & Writing");
+var p_2_content = document.createTextNode("I passed the Japanese Language Proficiency Test N3 in March of 2017");
+
+// Add the text nodes to the newly created elements
+h6_1.appendChild(h6_1_content);
+p_1.appendChild(p_1_content);
+h6_2.appendChild(h6_2_content);
+p_2.appendChild(p_2_content);
+
+// Add the newly created elements and their content into the div
+div.appendChild(h6_1);
+div.appendChild(p_1);
+div.appendChild(h6_2);
+div.appendChild(p_2);
