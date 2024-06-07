@@ -8,9 +8,9 @@ window.p_2_content = "I passed the Japanese Language Proficiency Test N3 in Marc
 
 //jobs
 window.jobsArray = [
-    "Kouya (Ginza)",
-    "6/2017-4/2020",
-    "I worked part-time as a chef & part-time leader in Tokyo."
+    "axrossroad株式会社",
+    "10/2023-now",
+    "I'm working as a Software Engineer in Tokyo."
 ];
 
 //Education
