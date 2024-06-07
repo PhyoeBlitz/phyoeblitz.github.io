@@ -16,7 +16,7 @@ window.jobsArray = [
 //Education
 window.EduArray = [
     "Sun-A Japanese language School",
-        "4/2016-3/2018",
-        "Sundai Techinical College",
-        "4/2018-3/2020"
+    "4/2016-3/2018",
+    "Sundai electronic information & Business College",
+    "4/2018-3/2020"
 ];
