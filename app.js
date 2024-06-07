@@ -36,7 +36,7 @@ function calculateExperience(startDate) {
 }
 
 // Usage
-const startDate = window.startDate; // Replace with your start date in YYYY-MM-DD format
+const startDate = window.startDate; 
 const experienceYears = calculateExperience(new Date(startDate));
 const experienceElement = document.getElementById('experienceYears');
 if(experienceElement){
