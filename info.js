@@ -10,6 +10,7 @@ window.p_2_content = "I passed the Japanese Language Proficiency Test N3 in Marc
 window.jobsArray = [
     "axrossroad株式会社",
     "10/2023-12/2024",
+    "",
     "株式会社YTT Links",
     "01/2025-now",
     "I'm working as a Software Engineer in Tokyo."
