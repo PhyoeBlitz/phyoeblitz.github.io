@@ -23,12 +23,14 @@ export const personalData: PersonalInfo = {
     }
   ],
   jobs: [
-    "axrossroad株式会社",
+    "Software Engineer at 株式会社J-Tech",
+    "04/2020-09/2023",
+    "",
+    "Software Engineer at axrossroad株式会社",
     "10/2023-12/2024",
     "",
-    "株式会社YTT Links",
+    "Software Engineer at 株式会社YTT Links",
     "01/2025-now",
-    "I'm working as a Software Engineer in Tokyo."
   ],
   education: [
     "Sun-A Japanese language School",
