@@ -27,7 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # old files
-/*.html
+# /*.html  # Commented out - we need index.html for Vite
 /app.js
 /info.js
 
