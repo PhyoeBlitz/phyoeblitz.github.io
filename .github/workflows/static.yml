@@ -33,13 +33,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
       
       - name: Update npm to latest
         run: npm install -g npm@latest
       
-      - name: Install dependencies
-        run: npm ci
+      - name: Clean install dependencies
+        run: |
+          rm -rf node_modules
+          npm install
       
       - name: Debug - List files
         run: |
