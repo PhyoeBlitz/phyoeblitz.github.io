@@ -44,13 +44,21 @@ jobs:
       
       - name: Debug - List files
         run: |
+          echo "Current working directory:"
+          pwd
           echo "Root directory contents:"
           ls -la
+          echo "Checking for index.html:"
+          if [ -f "index.html" ]; then echo "index.html exists"; else echo "index.html NOT found"; fi
           echo "Source directory contents:"
-          ls -la src/
+          if [ -d "src" ]; then ls -la src/; else echo "src directory NOT found"; fi
+          echo "Package.json contents:"
+          if [ -f "package.json" ]; then cat package.json | grep -A5 -B5 '"scripts"'; else echo "package.json NOT found"; fi
       
       - name: Build Vite app
-        run: npm run build
+        run: |
+          echo "Starting Vite build..."
+          npm run build
       
       - name: Add .nojekyll to build
         run: touch ./build/.nojekyll
