@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       <h2 className="small-heading">Web Developer & Software Engineer</h2>
       <div className="icons">
         <a href="https://x.com/kophyoe1997" target="_blank" rel="noopener noreferrer">
-          <i className="fa-brands fa-x-twitter fa-2x"></i>
+          <i className="fab fa-twitter fa-2x"></i>
         </a>
         <a href="https://www.facebook.com/Ko.Phyoe.1997" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-facebook fa-2x"></i>

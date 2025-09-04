@@ -30,19 +30,24 @@ const About: React.FC = () => {
           <h3 className="me-info">Skills</h3>
           <div id="Skills">
             {personalData.skills.map((skill, index) => (
-              <div key={index}>
-                <h3>{skill.header}</h3>
-                <p>{skill.content}</p>
+              <div key={index} className="skill-item">
+                <h4 className="skill-header">{skill.header}</h4>
+                <p className="skill-content">{skill.content}</p>
               </div>
             ))}
           </div>
         </div>
 
         <div className="job job-2">
-          <h3 className="me-info">Work</h3>
+          <h3 className="me-info">Work Experience</h3>
           <div id="Jobs">
             {personalData.jobs.map((job, index) => (
-              <p key={index}>{job}</p>
+              <div key={index} className="job-item">
+                <h4 className="job-title">{job.title}</h4>
+                <h5 className="company-name">{job.company}</h5>
+                <p className="job-period">{job.period}</p>
+                {job.description && <p className="job-description">{job.description}</p>}
+              </div>
             ))}
           </div>
         </div>
@@ -51,7 +56,11 @@ const About: React.FC = () => {
           <h3 className="me-info">Education</h3>
           <div id="Edu">
             {personalData.education.map((edu, index) => (
-              <p key={index}>{edu}</p>
+              <div key={index} className="education-item">
+                <h4 className="institution-name">{edu.institution}</h4>
+                <p className="education-period">{edu.period}</p>
+                {edu.description && <p className="education-description">{edu.description}</p>}
+              </div>
             ))}
           </div>
         </div>
