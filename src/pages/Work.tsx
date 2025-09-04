@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Project1Img from '../assets/Project1.png';
 import Project2Img from '../assets/Project2.png';
 import Project3Img from '../assets/Project3.png';
@@ -12,6 +13,7 @@ interface Project {
 }
 
 const Work: React.FC = () => {
+  const { t } = useTranslation();
   const projects: Project[] = [
     {
       title: "City Gallery",
@@ -48,9 +50,9 @@ const Work: React.FC = () => {
   return (
     <main id="about">
       <h1 className="lg-heading">
-        My <span className="text-secondary">Work</span>
+        {t('work.title.first')} <span className="text-secondary">{t('work.title.second')}</span>
       </h1>
-      <h2 className="small-heading">Check out some of my projects...</h2>
+      <h2 className="small-heading">{t('work.subtitle')}</h2>
       <div className="projects">
         {projects.map((project, index) => (
           <div className="item" key={index}>
@@ -64,7 +66,7 @@ const Work: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <i className="fas fa-eye"></i>Project
+              <i className="fas fa-eye"></i>{t('work.buttons.project')}
             </a>
             <a 
               href={project.githubUrl} 
@@ -72,7 +74,7 @@ const Work: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <i className="fab fa-github"></i>Github
+              <i className="fab fa-github"></i>{t('work.buttons.github')}
             </a>
           </div>
         ))}

@@ -45,6 +45,41 @@ header {
   z-index: 2;
   width: 100%;
 }
+
+/* Language Switcher */
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 3;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-btn {
+  background: rgba(51, 51, 51, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+  background: rgba(238, 206, 26, 0.8);
+  color: #000;
+  transform: translateY(-2px);
+}
+
+.lang-btn.active {
+  background: #eece1a;
+  color: #000;
+  border-color: #eece1a;
+}
+
 main {
   padding: 4rem;
   height: 100%;
@@ -608,6 +643,18 @@ main#home {
      padding: 1rem;
      margin-bottom: 1rem;
    }
+   
+   /* Language switcher mobile */
+   .language-switcher {
+     top: 10px;
+     left: 10px;
+     gap: 0.3rem;
+   }
+   
+   .lang-btn {
+     padding: 0.4rem 0.8rem;
+     font-size: 0.8rem;
+   }
 }
 
 /* Additional mobile-first improvements */
@@ -638,5 +685,16 @@ main#home {
   .boxes div{
     font-size: 1rem;
     padding: 0.75rem;
+  }
+  
+  /* Language switcher extra small mobile */
+  .language-switcher {
+    top: 5px;
+    left: 5px;
+  }
+  
+  .lang-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
   }
 }

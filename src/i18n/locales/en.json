@@ -1,0 +1,52 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Me",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "home": {
+    "name": {
+      "first": "Si Thu",
+      "last": "Phyo"
+    },
+    "title": "Web Developer & Software Engineer"
+  },
+  "about": {
+    "title": {
+      "first": "About",
+      "second": "Me"
+    },
+    "subtitle": "Let me tell you about myself...",
+    "bio": {
+      "title": "BIO",
+      "content": "I've been immersed in the world of programming while working in Japan for the past {{years}} years. Eager to explore new horizons, I am driven by a thirst for learning and mastering new skills. My experience spans across languages such as C# and VBA, and although I've extensively studied Java, HTML, CSS, and Linux, I'm yet to apply them professionally. However, I've been nurturing my passion for web development by creating websites as a hobby. Additionally, I possess a solid understanding of databases, proficient in both MSSQL and MySQL. My journey is fueled by the enthusiasm to continually grow and innovate within the realm of technology."
+    },
+    "skills": "Skills",
+    "workExperience": "Work Experience",
+    "education": "Education"
+  },
+  "work": {
+    "title": {
+      "first": "My",
+      "second": "Work"
+    },
+    "subtitle": "Check out some of my projects...",
+    "buttons": {
+      "project": "Project",
+      "github": "Github"
+    }
+  },
+  "contact": {
+    "title": {
+      "first": "Contact",
+      "second": "Me"
+    },
+    "subtitle": "This is how to reach me...",
+    "email": "Email:"
+  },
+  "languages": {
+    "en": "English",
+    "ja": "日本語"
+  }
+}

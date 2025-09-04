@@ -1,12 +1,15 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Home: React.FC = () => {
+  const { t } = useTranslation();
+  
   return (
     <main id="home">
       <h1 className="lg-heading">
-        Si Thu <span className="text-secondary">Phyo</span>
+        {t('home.name.first')} <span className="text-secondary">{t('home.name.last')}</span>
       </h1>
-      <h2 className="small-heading">Web Developer & Software Engineer</h2>
+      <h2 className="small-heading">{t('home.title')}</h2>
       <div className="icons">
         <a href="https://x.com/kophyoe1997" target="_blank" rel="noopener noreferrer">
           <i className="fab fa-x-twitter fa-2x"></i>
