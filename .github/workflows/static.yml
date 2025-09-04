@@ -48,6 +48,7 @@ jobs:
         with:
           # Upload build directory
           path: './build'
+          name: github-pages
 
   # Deploy job
   deploy:
