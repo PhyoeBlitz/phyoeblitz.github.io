@@ -26,7 +26,7 @@ const About: React.FC = () => {
         <div className="job job-1">
           <h3 className="me-info">{t('about.skills')}</h3>
           <div id="Skills">
-            {personalData.skills.map((skill, index) => (
+            {(t('about.personalSkills', { returnObjects: true }) as any[]).map((skill: any, index: number) => (
               <div key={index} className="skill-item">
                 <h4 className="skill-header">{skill.header}</h4>
                 <p className="skill-content">{skill.content}</p>
@@ -38,7 +38,7 @@ const About: React.FC = () => {
         <div className="job job-2">
           <h3 className="me-info">{t('about.workExperience')}</h3>
           <div id="Jobs">
-            {personalData.jobs.map((job, index) => (
+            {(t('about.jobs', { returnObjects: true }) as any[]).map((job: any, index: number) => (
               <div key={index} className="job-item">
                 <h4 className="job-title">{job.title}</h4>
                 <h5 className="company-name">{job.company}</h5>
@@ -52,7 +52,7 @@ const About: React.FC = () => {
         <div className="job job-3">
           <h3 className="me-info">{t('about.education')}</h3>
           <div id="Edu">
-            {personalData.education.map((edu, index) => (
+            {(t('about.educationList', { returnObjects: true }) as any[]).map((edu: any, index: number) => (
               <div key={index} className="education-item">
                 <h4 className="institution-name">{edu.institution}</h4>
                 <p className="education-period">{edu.period}</p>
